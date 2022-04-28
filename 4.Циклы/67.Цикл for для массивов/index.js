@@ -91,12 +91,87 @@
   // console.log(med);
 
   
-  
-let arr = [10, 20, 30, 50, 235, 3000];
+// Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.
 
-for (i = 0; i < arr.length; i++) {
-  const strNum = String(arr[i])
-  if (strNum[0] == 1 && strNum[0] == 2 && strNum[0] == 5) {
-    console.log(Number(strNum));
+  // let arr = [10, 20, 30, 50, 235, 3000];
+
+  // for (i = 0; i < arr.length; i++) {
+  //   const strNum = String(arr[i])
+
+  //   if (strNum[0] == 1 || strNum[0] == 2 || strNum[0] == 5) {
+  //     console.log(Number(strNum));
+  //   }
+  // }
+
+
+// Дан массив с числами. Выведите элементы этого массива в обратном порядке.
+
+
+  // let arr = [1, 2, 3, 4, 5, 6, 7]
+
+
+  // for (let i = (arr.length - 1); i >= 0 ; i--) {
+  //   console.log(arr[i]);
+  // }  
+
+
+// Дан массив с числами. С помощью цикла выведите на экран все элементы, значение которых совпадает с их порядковым номером в массиве.
+
+  // let arr = [1, 2, 2, 3, 5, 6, 8, 7, 9, 10, 10];
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (i === arr[i]) {
+  //     console.log(arr[i]);
+  //   }
+  // }
+  
+
+// Дан массив с числами. С помощью цикла for и функции document.write выведите каждый элемент массива с новой строки. Используйте для этого тег br.
+
+  // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   document.write(arr[i] + '<br>');  
+  // }
+  
+
+
+
+  // let arr = [
+  //   'Понедельник',
+  //   'Вторник',
+  //   'Среда',
+  //   'Четверг',
+  //   'Пятница',
+  //   'Суббота',
+  //   'Воскресенье'
+  // ]
+
+  // for (let i = 0; i < arr.length; i++) {
+
+  //   if (arr[i] === 'Суббота' || arr[i] === 'Воскресенье') {
+  //     document.write('<b>' + arr[i] + '</b> <br>')
+  //   } else {
+  //     document.write(arr[i] + '<br>')
+  //   }
+  // }
+
+  let arr = [
+    'Понедельник',
+    'Вторник',
+    'Среда',
+    'Четверг',
+    'Пятница',
+    'Суббота',
+    'Воскресенье'
+  ]
+  let day = 7;
+
+  for (let i = 0; i < arr.length; i++) {
+    if ( i === (day - 1)) {
+      document.write('<i>' + arr[i] + '</i> <br>')
+    } else {
+      document.write(arr[i] + '<br>')
+    }
   }
-}
+
