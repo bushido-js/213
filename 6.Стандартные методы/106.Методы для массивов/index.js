@@ -92,5 +92,29 @@
 
 
 //Работа с indexOf
-//Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.
-// arr.indexOf(searchElement[, fromIndex = 0])
+  //Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.
+  // arr.indexOf(searchElement[, fromIndex = 0])
+
+  // var indices = [];
+  // var array = ['a', 'b', 'a', 'c', 'a', 'd'];
+  // var element = 'a';
+  // var idx = array.indexOf(element);
+  // for (i = 0; i < array.length; i++){
+  //   if (idx != -1){
+  //     indices.push(idx);
+  //     idx = array.indexOf(element, idx + 1 );
+  //   }
+  // }
+  // console.log(indices);
+
+  // let arr = [1, 2, 3, 4, 5];
+  // console.log(arr.indexOf(3));
+
+
+
+//Метод includes
+// Метод includes проверяет наличие элемента в массиве.
+
+  //массив.includes(элемент)
+  let arr = [1, 2, 3, 4, 5];
+  console.log(arr.includes(3)); //  выдаст true
