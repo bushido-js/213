@@ -20,8 +20,8 @@ function getDivisors(num){
 //Нахождение суммы
 function getSum(arr){
   let sum = 0;
-  for (let elem of arr){
-    sum += elem;
+  for (i = 0; i < arr.length; i++){
+    sum += arr[i];
   }
   return sum;
 }
@@ -37,8 +37,8 @@ function getFrendly() {
   let arrFriendly = [];
   for (j = 1; j <= 3000; j++){
     for (k = j + 1; k <= 3000; k++){
-      if (isFrendly(j, k) == true && j !== k ){
-       arrFriendly.push([j, k]);
+      if (isFrendly(j, k) == true){
+      arrFriendly.push([j, k]);
       }
     }
   }
@@ -46,3 +46,18 @@ function getFrendly() {
 }
 
 console.log(getFrendly());
+
+
+
+// Совершенное число - целое число, равное сумме всех своих собственных делителей (то есть всех положительных делителей, отличных от самого числа). Сделайте функцию getPerfect, которая будет находить совершенные числа в заданном диапазоне. Проверьте работу функции в промежутке от 1 до 1000.
+
+function getPerfect () {
+  let arr = [];
+  for (j = 1; j <= 1000; j++){
+    if (getSumDivisors(j) === j){
+      arr.push(j)
+    }
+  }
+  return arr;
+}
+console.log(getPerfect());
