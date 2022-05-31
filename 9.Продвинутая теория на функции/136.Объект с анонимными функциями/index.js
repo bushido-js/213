@@ -6,10 +6,11 @@ let obj = {
 
 console.log(obj.func1() + obj.func2() + obj.func3());
 
-for (let func in obj){
-  console.log(func);
-}
+console.log(obj.func1())
 let math = {
 	square: function(num) {return num**2}, 
 	cube: function(num) {return num**3}, 
 };
+
+console.log(math.square(2));
+console.log(math.cube(4));
