@@ -26,11 +26,11 @@ function () {
 
 //Более сложные нюансы
 
-// func()
-// -1-
-// function func() {
-// 	alert('!');
-// }
+func()
+-1-
+function func() {
+	alert('!');
+}
 
 //Выражение справа
 
