@@ -18,7 +18,7 @@
 
 let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]); 
 
-function merge(arrs) {
+function merge(...arrs) {
   return [].concat(...arrs);
 }
 console.log(result);
