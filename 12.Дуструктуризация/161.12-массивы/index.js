@@ -10,7 +10,17 @@
 
 
 
-  let arr = ['Иван', 'Иванов', 'отдел разработки', 
-	'программист', 2000]; 
+  // let arr = ['Иван', 'Иванов', 'отдел разработки', 
+	// 'программист', 2000]; 
 
-let [name, surname, department, position, salary] = arr;
+  // let [name, surname, department, position, salary] = arr;
+
+// Массивы из функции
+
+function func() {
+	return ['Иван', 'Иванов', 'отдел разработки', 
+		'программист', 2000]; 
+}
+
+let [name, surname, department, position, salary] = func();
+console.log(name);
