@@ -22,5 +22,8 @@ function func() {
 		'программист', 2000]; 
 }
 
+// let [name, surname, department, position, salary] = func();
+// console.log(name);
+
 let [name, surname, department, position, salary] = func();
 console.log(name);
